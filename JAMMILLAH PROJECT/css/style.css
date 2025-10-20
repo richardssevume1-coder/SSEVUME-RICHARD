@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+  background-color: #f5fff4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ==== HEADER ==== */
+.header {
+  background: #1b5e20;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 60px;
+  border-radius: 50%;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #c8e6c9;
+  border-bottom: 2px solid #c8e6c9;
+}
+
+/* ==== HERO SECTION ==== */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+/* ==== SECTIONS ==== */
+.container {
+  width: 85%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.intro img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+}
+
+h1, h2, h3 {
+  color: #1b5e20;
+  margin-bottom: 10px;
+}
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.topic {
+  background: #e8f5e9;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.topic:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.topic img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* ==== ABOUT PAGE ==== */
+.vision-mission {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.vision-mission div {
+  flex: 1;
+  background: #f0fff0;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.service-images {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-images img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+}
+
+/* ==== CONTACT PAGE ==== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #e8f5e9;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contact-form button {
+  background: #1b5e20;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #2e7d32;
+}
+
+.social-media {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-media a {
+  color: #1b5e20;
+  text-decoration: none;
+  margin: 0 8px;
+  font-weight: 600;
+}
+
+.social-media a:hover {
+  text-decoration: underline;
+}
+
+/* ==== FOOTER ==== */
+.footer {
+  background: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.footer h4 {
+  margin: 10px 0;
+  color: #c8e6c9;
+}
